@@ -1,0 +1,95 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+} 
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.list-menu{
+    display: flex; 
+    list-style: none;  
+    justify-content: center;
+
+} 
+li{
+    padding: 5px 5px;
+}
+.menu-central #menu .list-menu li:not(:last-child):after {
+    content: '|'; /* Conteúdo do separador */
+    margin-left: 5px; /*Espaçamento entre o separador e o texto */
+    color: black; /* Cor do separador */
+}
+#container{
+    text-align: center;
+
+}
+a{
+    text-decoration: none; 
+    color: #000; 
+    cursor: pointer; 
+
+}
+.main{
+    margin-top: 2%;
+    text-align: center;
+}
+#container {
+  display: flex; 
+  padding: 2%; 
+  margin: 0% 30% 10% 30%;
+ 
+}
+.right,
+.left{
+    margin: 4%; 
+    text-align: justify;
+}
+form{
+    margin-top: 20px;
+    text-align: center;
+}
+.mensagem {
+    margin-bottom: 5px; 
+    margin-right: 80px;
+}
+.name,
+.Email,
+.login,
+.senha{
+    margin-top: 10px;
+    margin-bottom: 5px; 
+    margin-right: 250px;
+  }
+
+.input{
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+} 
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #4a4d4a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    margin-top: 10px;
+  }
+  
+  /* Estilo do botão quando passa o mouse por cima */
+button:hover {
+    background-color: rgb(14, 13, 13);
+  }
