@@ -4,7 +4,7 @@ function fazerRegistro() {
 
     const dadosRegistro = {email: novoEmailUsuario, senha: novaSenhaUsuario};
 
-    if (validarNovoUsuario(dadosRegistro)) {
+    if (validarUsuario(dadosRegistro)) {
         alert("Registro realizado com sucesso!");
         window.location.href = "pagina-inicial.html";
     } else {
