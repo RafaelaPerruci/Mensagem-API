@@ -10,16 +10,18 @@ body{
 .list-menu{
     display: flex; 
     list-style: none;  
-    justify-content: center;
+    justify-content: center; 
 
 } 
 li{
     padding: 5px 5px;
 }
 .menu-central #menu .list-menu li:not(:last-child):after {
-    content: '|'; /* Conteúdo do separador */
-    margin-left: 5px; /*Espaçamento entre o separador e o texto */
-    color: black; /* Cor do separador */
+    content: '|'; 
+    margin-left: 5px; 
+    color: black;  
+    margin-bottom: 20%;
+    
 }
 #container{
     text-align: center;
@@ -95,14 +97,13 @@ button:hover {
 } 
 
 .list-messages {
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100px;
-    text-align: center;
+    text-align: center; 
 }
-
 
 .page-initial {
     font-size: 2em;
@@ -113,7 +114,18 @@ button:hover {
 .messages-table {
     border-collapse: collapse; 
     border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    width: 80%;
-    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    align-items: center; 
+    display: block;
+} 
+.messages-table tbody {
+    display: block;
+    overflow-y: auto;
+}
+
+.messages-table thead {
+    display: block;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
 }
