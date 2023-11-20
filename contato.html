@@ -16,7 +16,7 @@
             </ul>
         </nav>
         </div>
-    <form id="contact" action="https://app-uniesp-p2-43622fe4ead4.herokuapp.com/mensagens" method="post" autocomplete="off"> 
+    <form id="contact" action="#"> 
         <section class="contact-area">
         <h1>Contato</h1> 
         <p class="name">Nome:</p>
@@ -29,13 +29,14 @@
             <textarea class="input" type="text" placeholder="Digite sua mensagem" required="" rows="7" id="mensagem" name="mensagem"></textarea>
         
         <div>
-            <button type="button" id="mensagem-button">Enviar</button>
+            <button type="button" id="mensagem-button" onclick="addDadosContato()">Enviar</button>
         </div> 
         
         </section>
       </form> 
     
-      <script src="jquery-3.6.4.min.js"></script>
-    <script src="api.js"></script>
+      <script src="jss/jquery-3.6.4.min.js"></script>
+      <script src="jss/api.js"></script> 
+      <script src="jss/scriptAddContato.js"></script>
 </body>
 </html>
