@@ -6,7 +6,7 @@ function fazerRegistro() {
 
     if (validarNovoUsuario(dadosRegistro)) {
         alert("Registro realizado com sucesso!");
-        window.location.href = "pagina_inicial.html";
+        window.location.href = "pagina-inicial.html";
     } else {
         alert("Erro ao registrar novo usuário");
     }
