@@ -1,6 +1,6 @@
 function fazerRegistro() {
-    const novoEmailUsuario = document.getElementById("novo-email").value;
-    const novaSenhaUsuario = document.getElementById("nova-password").value;
+    const novoEmailUsuario = document.getElementById("login-input").value;
+    const novaSenhaUsuario = document.getElementById("senha").value;
 
     const dadosRegistro = {email: novoEmailUsuario, senha: novaSenhaUsuario};
 
@@ -11,5 +11,5 @@ function fazerRegistro() {
         alert("Erro ao registrar novo usuário");
     }
 
-    document.getElementById('registro-form').reset();
+    document.getElementById('login').reset();
 }
