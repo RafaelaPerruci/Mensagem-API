@@ -101,7 +101,6 @@ button:hover {
     justify-content: center;
     height: 100px;
     text-align: center;
-    font-family: Arial, sans-serif;
 }
 
 
@@ -112,7 +111,9 @@ button:hover {
 }
 
 .messages-table {
-    border-collapse: collapse;
+    border-collapse: collapse; 
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     width: 80%;
     max-width: 800px;
 }
